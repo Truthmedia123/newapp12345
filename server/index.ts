@@ -149,9 +149,9 @@ async function initializeApp() {
       return res.sendFile(path.resolve(staticPath, 'index.html'));
     });
     
-    // Start server
-    app.listen(PORT, () => {
-      console.log(`🎉 Server running on port ${PORT}`);
+    // Start server - bind to 0.0.0.0 for Replit compatibility
+    app.listen(PORT, '0.0.0.0', () => {
+      console.log(`🎉 Server running on 0.0.0.0:${PORT}`);
       console.log(`📊 Health check: http://localhost:${PORT}/health`);
       console.log(`🔍 Environment: ${process.env.NODE_ENV || 'development'}`);
     });
