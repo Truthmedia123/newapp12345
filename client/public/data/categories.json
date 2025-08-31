@@ -1,0 +1,433 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Bachelor/Bachelorette Party Planners",
+      "slug": "bachelor-bachelorette-party-planners",
+      "description": "Fun pre-wedding celebration organizers",
+      "icon": "PartyPopper",
+      "color": "from-purple-500 to-pink-500",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "vendorCount": 25
+    },
+    {
+      "id": 2,
+      "name": "Bands, DJs & Sound Systems",
+      "slug": "bands-djs-sound-systems",
+      "description": "Music and entertainment for your wedding",
+      "icon": "Music",
+      "color": "from-red-500 to-orange-500",
+      "image": "https://images.unsplash.com/photo-1469371670807-013ccf25f16a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "vendorCount": 45
+    },
+    {
+      "id": 3,
+      "name": "Beverage Services & Bartending",
+      "slug": "beverage-services-bartending",
+      "description": "Professional bartending and drink services",
+      "icon": "Wine",
+      "color": "from-green-500 to-teal-500",
+      "image": "https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "vendorCount": 32
+    },
+    {
+      "id": 4,
+      "name": "Makeup & Beauty Artists",
+      "slug": "makeup-beauty-artists",
+      "description": "Professional makeup and beauty services",
+      "icon": "Sparkles",
+      "color": "from-pink-500 to-rose-500",
+      "image": "https://images.unsplash.com/photo-1465495976277-4387d4b0e4a6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "vendorCount": 67
+    },
+    {
+      "id": 5,
+      "name": "Cakes & Traditional Bakers",
+      "slug": "cakes-traditional-bakers",
+      "description": "Custom wedding cakes and traditional sweets",
+      "icon": "Cake",
+      "color": "from-yellow-500 to-orange-500",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "vendorCount": 38
+    },
+    {
+      "id": 6,
+      "name": "Transportation & Luxury Cars",
+      "slug": "transportation-luxury-cars",
+      "description": "Wedding transportation and luxury vehicle rentals",
+      "icon": "Car",
+      "color": "from-blue-500 to-indigo-500",
+      "image": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "vendorCount": 28
+    },
+    {
+      "id": 7,
+      "name": "Catering & Food Services",
+      "slug": "catering-food-services",
+      "description": "Professional catering and food services",
+      "icon": "ChefHat",
+      "color": "from-orange-500 to-red-500",
+      "image": "https://images.unsplash.com/photo-1551024601-bec78aea704b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "vendorCount": 89
+    },
+    {
+      "id": 8,
+      "name": "Kids Entertainment & Nannies",
+      "slug": "kids-entertainment-nannies",
+      "description": "Child care and entertainment services",
+      "icon": "Baby",
+      "color": "from-cyan-500 to-blue-500",
+      "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "vendorCount": 15
+    },
+    {
+      "id": 9,
+      "name": "Bridal Jewelry & Accessories",
+      "slug": "bridal-jewelry-accessories",
+      "description": "Wedding jewelry and bridal accessories",
+      "icon": "Gem",
+      "color": "from-purple-500 to-indigo-500",
+      "image": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "vendorCount": 42
+    },
+    {
+      "id": 10,
+      "name": "Floral Design & Decorations",
+      "slug": "floral-design-decorations",
+      "description": "Wedding flowers and decorative arrangements",
+      "icon": "Flower2",
+      "color": "from-green-500 to-emerald-500",
+      "image": "https://images.unsplash.com/photo-1606800052052-a08af7148866?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "vendorCount": 56
+    },
+    {
+      "id": 11,
+      "name": "Lighting & Technical Services",
+      "slug": "lighting-technical-services",
+      "description": "Professional lighting and technical equipment",
+      "icon": "Zap",
+      "color": "from-yellow-500 to-amber-500",
+      "image": "https://images.unsplash.com/photo-1519167758481-83f29c8e8d4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "vendorCount": 23
+    },
+    {
+      "id": 12,
+      "name": "Eco-Friendly & Sustainable Services",
+      "slug": "eco-friendly-sustainable-services",
+      "description": "Environmentally conscious wedding services",
+      "icon": "Leaf",
+      "color": "from-green-600 to-lime-500",
+      "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "vendorCount": 19
+    },
+    {
+      "id": 13,
+      "name": "Live Entertainment & DJs",
+      "slug": "live-entertainment-djs",
+      "description": "Professional DJs and live entertainment",
+      "icon": "Mic",
+      "color": "from-red-500 to-pink-500",
+      "image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "vendorCount": 34
+    },
+    {
+      "id": 14,
+      "name": "Security & Crowd Management",
+      "slug": "security-crowd-management",
+      "description": "Professional security and event management",
+      "icon": "Shield",
+      "color": "from-gray-600 to-slate-500",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "vendorCount": 12
+    },
+    {
+      "id": 15,
+      "name": "Wedding Favors & Gifts",
+      "slug": "wedding-favors-gifts",
+      "description": "Custom wedding favors and gift services",
+      "icon": "Gift",
+      "color": "from-teal-500 to-cyan-500",
+      "image": "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "vendorCount": 31
+    },
+    {
+      "id": 16,
+      "name": "Traditional & Cultural Music",
+      "slug": "traditional-cultural-music",
+      "description": "Traditional Goan and cultural music services",
+      "icon": "Music2",
+      "color": "from-amber-500 to-yellow-500",
+      "image": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "vendorCount": 27
+    },
+    {
+      "id": 17,
+      "name": "Photography & Videography",
+      "slug": "photography-videography",
+      "description": "Professional wedding photography and videography",
+      "icon": "Camera",
+      "color": "from-indigo-500 to-purple-500",
+      "image": "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "vendorCount": 78
+    },
+    {
+      "id": 18,
+      "name": "Rental & Equipment Services",
+      "slug": "rental-equipment-services",
+      "description": "Wedding equipment and furniture rentals",
+      "icon": "Recycle",
+      "color": "from-slate-500 to-gray-500",
+      "image": "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "vendorCount": 41
+    },
+    {
+      "id": 19,
+      "name": "Guest Management & Invitations",
+      "slug": "guest-management-invitations",
+      "description": "Invitation design and guest management services",
+      "icon": "Users",
+      "color": "from-blue-500 to-cyan-500",
+      "image": "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "vendorCount": 29
+    },
+    {
+      "id": 20,
+      "name": "Wedding Planners & Coordinators",
+      "slug": "wedding-planners-coordinators",
+      "description": "Professional wedding planning and coordination",
+      "icon": "Calendar",
+      "color": "from-rose-500 to-pink-500",
+      "image": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "vendorCount": 52
+    },
+    {
+      "id": 21,
+      "name": "Bridal Fashion & Attire",
+      "slug": "bridal-fashion-attire",
+      "description": "Wedding dresses, suits, and bridal fashion",
+      "icon": "Shirt",
+      "color": "from-pink-500 to-rose-500",
+      "image": "https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "vendorCount": 67
+    },
+    {
+      "id": 22,
+      "name": "Groom's Attire & Styling",
+      "slug": "grooms-attire-styling",
+      "description": "Men's wedding suits and styling services",
+      "icon": "Users",
+      "color": "from-blue-500 to-indigo-500",
+      "image": "https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "vendorCount": 43
+    },
+    {
+      "id": 23,
+      "name": "Wedding Venues & Locations",
+      "slug": "wedding-venues-locations",
+      "description": "Beautiful venues for your special day",
+      "icon": "Home",
+      "color": "from-green-500 to-emerald-500",
+      "image": "https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "vendorCount": 89
+    },
+    {
+      "id": 24,
+      "name": "Honeymoon & Travel Planning",
+      "slug": "honeymoon-travel-planning",
+      "description": "Romantic honeymoon and travel arrangements",
+      "icon": "Plane",
+      "color": "from-sky-500 to-blue-500",
+      "image": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "vendorCount": 34
+    },
+    {
+      "id": 25,
+      "name": "Wedding Stationery & Invitations",
+      "slug": "wedding-stationery-invitations",
+      "description": "Custom invitations and wedding stationery",
+      "icon": "FileText",
+      "color": "from-purple-500 to-violet-500",
+      "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "vendorCount": 56
+    },
+    {
+      "id": 26,
+      "name": "Hair Styling & Salon Services",
+      "slug": "hair-styling-salon-services",
+      "description": "Professional bridal hair styling",
+      "icon": "Sparkles",
+      "color": "from-amber-500 to-orange-500",
+      "image": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "vendorCount": 78
+    },
+    {
+      "id": 27,
+      "name": "Wedding Cakes & Desserts",
+      "slug": "wedding-cakes-desserts",
+      "description": "Custom wedding cakes and sweet treats",
+      "icon": "Cake",
+      "color": "from-pink-500 to-red-500",
+      "image": "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "vendorCount": 45
+    },
+    {
+      "id": 28,
+      "name": "Mehendi & Henna Artists",
+      "slug": "mehendi-henna-artists",
+      "description": "Traditional henna and mehendi designs",
+      "icon": "Paintbrush",
+      "color": "from-orange-500 to-red-500",
+      "image": "https://images.unsplash.com/photo-1583391733956-6c78276477e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "vendorCount": 67
+    },
+    {
+      "id": 29,
+      "name": "Wedding Choreography & Dance",
+      "slug": "wedding-choreography-dance",
+      "description": "Dance choreography for wedding celebrations",
+      "icon": "Music",
+      "color": "from-violet-500 to-purple-500",
+      "image": "https://images.unsplash.com/photo-1545558014-8692077e9b5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "vendorCount": 39
+    },
+    {
+      "id": 30,
+      "name": "Bridal Spa & Wellness",
+      "slug": "bridal-spa-wellness",
+      "description": "Pre-wedding spa and wellness treatments",
+      "icon": "Heart",
+      "color": "from-teal-500 to-cyan-500",
+      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "vendorCount": 52
+    },
+    {
+      "id": 31,
+      "name": "Wedding Insurance & Legal",
+      "slug": "wedding-insurance-legal",
+      "description": "Wedding insurance and legal documentation",
+      "icon": "Shield",
+      "color": "from-gray-500 to-slate-500",
+      "image": "https:/
+      
+    },
+    {
+      "id": 32,
+      "name": "Destination Wedding Specialists",
+      "slug": "destination-wedding-specialists",
+      "description": ",
+      "icon": "Globe",
+      "color": "from-blue-500 to-teal-500",
+      "image": "https:/",
+       29
+    },
+    {
+      "id": 33,
+      "name": "Wedding Technology & Apps",
+      "slug": "wedding-technology-apps",
+      "description": "Digits",
+      "icon": "Smartphone",
+      "color": "from-in,
+      ,
+     t": 21
+    },
+    {
+      "id": 34,
+      "name": "Vintage & Antique Rentals",
+      "slug": "vintag,
+      "description": "Vintage furniture and antions",
+      "icon": "Star",
+      ",
+     ",
+      "vendorCont": 33
+    },
+    {
+      "id": 35,
+      "name": "Wedding Covices",
+      "slug": "wedding-coordination-services",
+      "description": "D
+      ,
+     ,
+      "image": =80",
+      "vendorCount": 47
+    },
+    {
+      "id": 36,
+      "name": "Bridal Party Services",
+      "slug": "bridal-p",
+      ",
+     ers",
+      "color": 0",
+      "image": "https://images.unsplash.co",
+      "vendorCount": 38
+    },
+    {
+      "id": 37,
+      "name": "Wedding ,
+      
+     ",
+      "icon": "
+      "color": "from-cyan-500 to-blue-500",
+      "image": "https://images.unsplas0",
+      "vendorCount": 24
+    },
+    {
+      "id": 38,
+      
+     
+      "descript day",
+      "icon": "Dog",
+      "color": "from-green-500 to-teal-500",
+      "image": "https://images.unsplash.com/photo-1544717297-f",
+      "vendorCount": 16
+    },
+    {
+      39,
+     
+      "slug": "ment",
+      "description": "Professional catering eq",
+      "icon": "ChefHat",
+      "color": "from-orange-500 to-amber-500",
+      "image": "https:/80",
+      "vendorCount": 31
+    },
+    {
+     ,
+      "name": "
+      "slug": "brunch-after-party-services",
+      "description": "Post-wedding celebr",
+      "icon": "Coffee",
+      "color": "from-y",
+      "image": "https://images.unsplash.co
+      "vendorCount": 28
+    },
+    {
+      "id": 41,
+      "name": "Wedding Wellness & Fitness",
+      "slug": "wedding-wellness-fitness",
+      "description": "Pre-wedding fitness and wellness programs",
+      "icon": "Heart",
+      "color": "from-red-500 to-pink-500",
+      "image": "https:/0",
+      : 22
+    }
+    {
+      "id": 42,
+      "name": "Cultural & Religious Service",
+      "slug": "cultural-religious-services",
+      "description": "Tradit",
+      "icon": "Star",
+      "color": "from-pu00",
+     ",
+   5
+  ]
+} }
+ : 14
+   ndorCount""ve",
+      =80&q00rop&w=8t&fit=cormato=f=rb-4.0.3&au2000?ixlib-59a10b8d9824913935o-144m/photcoes.unsplash.ps://imag": "htt    "image
+  range-500",red-500 to-ofrom-color": ",
+      "hieldCheck"icon": "S     "ces",
+ rviseup ckport and bamergency supion": "Eptcri   "des   ",
+cy-servicesng-emergeneddi": "wlug      "sices",
+rgency ServWedding Emee": "    "nam3,
+   4"id":         {
+    },
