@@ -1,5 +1,4 @@
 import express, { type Express } from "express";
-import { createServer, type Server } from "http";
 import path from "path";
 import { storage } from "./storage";
 import { insertReviewSchema, insertBusinessSubmissionSchema, insertContactSchema } from "@shared/schema";
@@ -11,7 +10,7 @@ import { generateSitemap, generateRobotsTxt } from "./seo/sitemap";
 // import { generateVendorJsonLd, generateWebsiteJsonLd } from "./seo/structuredData";
 // import { generateVendorMetaTags, generateCategoryMetaTags } from "./seo/metaTags";
 
-export async function registerRoutes(app: Express): Promise<Server> {
+export async function registerRoutes(app: Express): Promise<void> {
   // Initialize performance monitoring
   const performanceMonitor = new PerformanceMonitor();
   const performanceMiddleware = createPerformanceMiddleware(performanceMonitor);
@@ -358,6 +357,4 @@ export async function registerRoutes(app: Express): Promise<Server> {
     res.sendFile(path.join(process.cwd(), 'dist', 'public', 'index.html'));
   });
 
-  const httpServer = createServer(app);
-  return httpServer;
 }

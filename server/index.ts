@@ -22,7 +22,7 @@ import helmet from "helmet";
 import rateLimit from "express-rate-limit";
 import path from "path";
 import { registerRoutes } from "./routes";
-import supabaseDbConnection from "./db/connection-supabase";
+import { db, pool } from "./db-config";
 import { initializeStorage } from "./storage";
 import { redisCache } from "./cache/redis";
 
@@ -87,13 +87,10 @@ app.use((req, res, next) => {
 // Health check endpoint
 app.get('/health', async (req, res) => {
   try {
-<<<<<<< HEAD
-    // Just check if database connection works without returning the object
-    await initializeDatabase();
-=======
-    const dbHealth = await supabaseDbConnection.healthCheck();
-    const redisHealth = await redisCache.healthCheck();
->>>>>>> 89ca9f6423f3fcc9a2a59281bab27161516ddc10
+    // Simple database health check
+    await db.execute('SELECT 1');
+    const dbHealth = { status: 'connected' };
+    const redisHealth = { status: 'optional' };
     
     const healthStatus = {
       status: 'healthy',
@@ -132,9 +129,8 @@ async function initializeApp() {
   try {
     console.log('🚀 Initializing Wedding Directory Platform...');
     
-    // Initialize database
-    await supabaseDbConnection.connect();
-    console.log('✅ Database initialized');
+    // Database connection is already established via pool
+    console.log('✅ Database connection established');
     
     // Initialize storage with Redis
     await initializeStorage();
@@ -150,7 +146,7 @@ async function initializeApp() {
       if (req.path.startsWith('/api/') || req.path.startsWith('/health')) {
         return res.status(404).json({ error: 'Not found' });
       }
-      res.sendFile(path.resolve(staticPath, 'index.html'));
+      return res.sendFile(path.resolve(staticPath, 'index.html'));
     });
     
     // Start server
@@ -172,14 +168,14 @@ async function initializeApp() {
 // Graceful shutdown
 process.on('SIGTERM', async () => {
   console.log('🛑 SIGTERM received, shutting down gracefully...');
-  await supabaseDbConnection.disconnect();
+  await pool.end();
   await redisCache.disconnect();
   process.exit(0);
 });
 
 process.on('SIGINT', async () => {
   console.log('🛑 SIGINT received, shutting down gracefully...');
-  await supabaseDbConnection.disconnect();
+  await pool.end();
   await redisCache.disconnect();
   process.exit(0);
 });
