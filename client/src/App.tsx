@@ -6,14 +6,8 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { ToastProvider } from "@/components/ui/toast";
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 89ca9f6423f3fcc9a2a59281bab27161516ddc10
 import { AnalyticsProvider } from "@/components/Performance/Analytics";
 import { PWAInstallPrompt, PWAUpdatePrompt, OfflineIndicator } from "@/components/PWA/ServiceWorker";
-=======
->>>>>>> c5e9b79926bcd1565a2e058d377db7ca2e3028c5
 
 import Layout from "@/components/Layout";
 
