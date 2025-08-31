@@ -8,7 +8,7 @@ import type {
   Wedding, InsertWedding,
   Rsvp, InsertRsvp
 } from "@shared/schema";
-import { redisCache } from "./cache/redis";
+import { memoryCache as redisCache } from "./cache/memory-cache";
 import { sql } from "drizzle-orm";
 
 export interface IStorage {

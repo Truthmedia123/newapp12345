@@ -24,7 +24,7 @@ import path from "path";
 import { registerRoutes } from "./routes";
 import { db, pool } from "./db-config";
 import { initializeStorage } from "./storage";
-import { redisCache } from "./cache/redis";
+import { memoryCache as redisCache } from "./cache/memory-cache";
 
 // Debug environment variables
 console.log('🔍 Environment check:');
