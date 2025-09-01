@@ -185,22 +185,14 @@ export const rsvps = pgTable("rsvps", {
 }));
 
 // Insert schemas with enhanced validation
-export const insertVendorSchema = createInsertSchema(vendors, {
-  email: (schema) => schema.email("Invalid email format"),
-  phone: (schema) => schema.min(10, "Phone number must be at least 10 digits"),
-  whatsapp: (schema) => schema.min(10, "WhatsApp number must be at least 10 digits"),
-  website: (schema) => schema.url("Invalid website URL").optional().or(z.literal("")),
-  rating: (schema) => schema.regex(/^\d+(\.\d{1,2})?$/, "Rating must be a decimal with up to 2 places").optional(),
-}).omit({
+export const insertVendorSchema = createInsertSchema(vendors).omit({
   id: true,
   reviewCount: true,
   createdAt: true,
   updatedAt: true,
 });
 
-export const insertReviewSchema = createInsertSchema(reviews, {
-  rating: (schema) => schema.min(1).max(5),
-}).omit({
+export const insertReviewSchema = createInsertSchema(reviews).omit({
   id: true,
   verified: true,
   createdAt: true,
@@ -221,12 +213,7 @@ export const insertBlogPostSchema = createInsertSchema(blogPosts).omit({
   updatedAt: true,
 });
 
-export const insertBusinessSubmissionSchema = createInsertSchema(businessSubmissions, {
-  email: (schema) => schema.email("Invalid email format"),
-  phone: (schema) => schema.min(10, "Phone number must be at least 10 digits"),
-  whatsapp: (schema) => schema.min(10, "WhatsApp number must be at least 10 digits"),
-  website: (schema) => schema.url("Invalid website URL").optional().or(z.literal("")),
-}).omit({
+export const insertBusinessSubmissionSchema = createInsertSchema(businessSubmissions).omit({
   id: true,
   status: true,
   reviewedBy: true,
@@ -235,18 +222,14 @@ export const insertBusinessSubmissionSchema = createInsertSchema(businessSubmiss
   updatedAt: true,
 });
 
-export const insertContactSchema = createInsertSchema(contacts, {
-  email: (schema) => schema.email("Invalid email format"),
-}).omit({
+export const insertContactSchema = createInsertSchema(contacts).omit({
   id: true,
   status: true,
   respondedAt: true,
   createdAt: true,
 });
 
-export const insertWeddingSchema = createInsertSchema(weddings, {
-  contactEmail: (schema) => schema.email("Invalid email format"),
-}).omit({
+export const insertWeddingSchema = createInsertSchema(weddings).omit({
   id: true,
   createdAt: true,
   updatedAt: true,
