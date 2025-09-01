@@ -82,24 +82,9 @@ function App() {
     <ErrorBoundary>
       <QueryClientProvider client={queryClient}>
         <ToastProvider>
-<<<<<<< HEAD
-          <AnalyticsProvider>
-            <TooltipProvider>
-              <PerformanceOptimizations />
-              <MobileOptimizations />
-              {/* Toaster functionality is now provided by ToastProvider */}
-              <Router />
-              <PWAInstallPrompt />
-              <PWAUpdatePrompt />
-              <OfflineIndicator />
-            </TooltipProvider>
-          </AnalyticsProvider>
-=======
           <TooltipProvider>
-            <Toaster />
             <Router />
           </TooltipProvider>
->>>>>>> c5e9b79926bcd1565a2e058d377db7ca2e3028c5
         </ToastProvider>
       </QueryClientProvider>
     </ErrorBoundary>
